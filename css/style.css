@@ -1,10 +1,16 @@
 menu {
 	padding: 0;
 	margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
+.bt-orange {
+	border-top: 5px solid orange;
+}
 .bb-orange {
-	border-bottom: 10px solid orange;
+	border-bottom: 5px solid orange;
 }
 
 .main__item a:before {
@@ -212,7 +218,7 @@ menu {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: start;
-	background: #74787b;
+	background: #00816a;
 	height: 100%;
 
 }
@@ -229,6 +235,8 @@ menu {
 	text-decoration-color: #fff;
 
 }
+
+
 
 
 .advantages-item-text {
@@ -249,10 +257,10 @@ menu {
 }
 
 .bg-l {
-	background: #a0a1a2;
+	background: #13a98e;
 }
 .bg-dl{
-	background: #868787;
+	background: #0e967e;
 }
 .opa {
 	transition: all .3s ease;
@@ -289,12 +297,34 @@ menu {
 .basic-content a {
 	color: #ea6c18;
 	text-decoration: underline;
-	transition: all .3 ease;
+	transition: all .3s ease;
 }
 
 .basic-content a:hover {
 	text-decoration: none;
 	color: orange;
+}
+.writing {
+	margin-bottom: 40px;
+
+}
+
+.writing h3 {
+	position: relative;
+	transition: all .5s ease;
+}
+.writing h3::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	width: 0px;
+	background: orange;
+	transition: all .5s ease;
+}
+.writing:hover h3::after {
+	width: 100%;
 }
 
 .writing-item {
@@ -307,6 +337,9 @@ menu {
 	align-items: start;
 	justify-content: start;
 	margin-bottom: 30px;
+}
+.writing-item:last-child {
+	margin-bottom: 15px;
 }
 .writing-item img {
 	width: 130px;
@@ -342,6 +375,19 @@ menu {
     font-weight: 700;
 }
 
+.writing-more {
+	text-align: right;
+}
+.writing-more a {
+	color: #ea6c18;
+	text-decoration: underline;
+	transition: all .3s ease;
+}
+.writing-more a:hover {
+	text-decoration: none;
+	color: orange;
+}
+
 .footer-requisites {
 	font-size: 10px;
 	text-align: center;
@@ -352,4 +398,12 @@ menu {
 	text-align: center;
 }
 
+
+.bg-grey {
+	background: #eee;
+}
+footer {
+	min-height: 80px;
+	background: #333;
+}
 
