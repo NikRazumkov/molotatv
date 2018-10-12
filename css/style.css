@@ -1,3 +1,7 @@
+body {
+	transition: transform .1s linear;
+}
+
 menu {
 	padding: 0;
 	margin: 0;
@@ -6,11 +10,46 @@ menu {
   z-index: 10;
 }
 
+svg {
+	width: 140px;
+	max-width: 140px;
+	height: auto;
+
+}
+
 .bt-orange {
 	border-top: 5px solid orange;
 }
 .bb-orange {
 	border-bottom: 5px solid orange;
+}
+
+.nav-item{
+	position: relative;
+}
+
+a.hover_bottom_color::after {
+	position: absolute;
+	content: '';
+	bottom: 10px;
+	left: 10%;
+	height: 2px;
+	width: 0px;
+	background: orange;
+	transition: all .5s ease;
+}
+.nav-item:hover a.hover_bottom_color::after {
+	width: 80%;
+}
+
+a.is_active::after{
+	position: absolute;
+	content: '';
+	bottom: 10px;
+	left: 10%;
+	height: 2px;
+	width: 80%;
+	background: orange;
 }
 
 .main__item a:before {
