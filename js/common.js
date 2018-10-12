@@ -80,20 +80,20 @@ tl
 	},"-=1.3")
 
 
-	.from( $('.logo__bottom_g'), 1, {
-		x: 1000
+	.from( $('.logo__bottom_g'), 1.2, {
+		x: 10000
 	},"-=1.25")
-	.from( $('.logo__bottom_second_r'), 1, {
-		x: 1000
+	.from( $('.logo__bottom_second_r'), 1.2, {
+		x: 10000
 	},"-=1.2")
-	.from( $('.logo__fird_o'), 1, {
-		x: 1000
+	.from( $('.logo__fird_o'), 1.2, {
+		x: 10000
 	},"-=1.15")
-	.from( $('.logo__bottom_u'), 1, {
-		x: 1000
+	.from( $('.logo__bottom_u'), 1.1, {
+		x: 10000
 	},"-=1.1")
-	.from( $('.logo__bottom_p'), 0.9, {
-		x: 1000
+	.from( $('.logo__bottom_p'), 1, {
+		x: 10000
 	},"-=1.05")
 	;
 
