@@ -7,21 +7,23 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>NewSite</title>
 </head>
 <body>
-
+<div class="wrap" id="canvas">
 	<div class="top-line">
-		<div class="container">
+		<div class="container p0">
+
 			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 				<a class="navbar-brand" href="index.html">
 
 
-<svg version="1.1"
+<svg class="svg__logo" version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" width="3435px" height="1042.9px" viewBox="0 0 3435 1042.9" style="enable-background:new 0 0 3435 1042.9;"
+	 x="0px" y="0px"  viewBox="0 0 3435 1042.9" style="enable-background:new 0 0 3435 1042.9;"
 	 xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#fff;}
@@ -106,20 +108,20 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
+					<ul class="navbar-nav mr-auto ">
+						<li class="nav-item active tac">
 							<a class="nav-link hover_bottom_color is_active" href="index.html">Главная <span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tac">
 							<a class="nav-link hover_bottom_color" href="#">Новости</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tac">
 							<a class="nav-link hover_bottom_color" href="#">Галерея</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tac">
 							<a class="nav-link hover_bottom_color" href="#">Оплата и доставка</a>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item tac">
 							<a class="nav-link hover_bottom_color" href="#">Контакты</a>
 						</li>
 
@@ -127,10 +129,10 @@
 
 					</ul>
 					<form class="form-inline">
-						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+						<input class="form-control mr-sm-2" type="search" placeholder="Поиск по сайту..." aria-label="Поиск">
 					</form>
 					<div class="form-inline my-2 my-lg-0">
-						<div class="top-line__phone">+375-29-6147000 <br><span>пн-cб 09:00-21:00</span>	</div>
+						<div class="top-line__phone">+375 (29) 6147000 <br><span>пн-cб 09:00-21:00</span><br><a  href="mailto:info@molotmotors.by" class="top-email">info@molotmotors.by</a>	</div>
 						
 					</div>
 				</div>
@@ -139,15 +141,15 @@
 		</div>
 	</div>
 
-	<menu class="top-line-menu">
+	<menu class="top-line-menu ">
 
 
-		<div class="container ">
+		<div class="container p0">
 			<nav class="navbar  navbar-expand-lg navbar-light bg-light  bb-orange" >
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent2">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -272,7 +274,7 @@
 		</div>
 	</menu>
 	<div class="main ">
-		<div class="container">
+		<div class="container p0">
 			<div class="row no-gutters bb40 bt-orange">
 
 				<div class="col-md-4">
@@ -304,7 +306,7 @@
 							<span class="main__item_text main__item_hover-hi">Квадроциклы</span>
 						</a>
 					</div>
-					<div class="main__item mx-auto  position-relative">
+					<div id class="main__item mx-auto  position-relative">
 						<a href="#">
 							<img src="images/elektro600-400.jpg" alt="Электротранспорт" class="main__item_img w-100">
 							<span class="main__item_text main__item_hover-hi">Электротранспорт</span>
@@ -411,7 +413,7 @@
 		</div>
 	</main>	
 	<div class="gallery">
-		<div class="container ">
+		<div class="container p0">
 			<div class="row no-gutters bb40">
 				<div class="col-md-3">
 					<div class="advantages">
@@ -518,18 +520,21 @@
 		</div>
 	</div>
 	<div class="main-text">
-		<div class="container">
+		<div class="container p0">
 			<h1>Продажа квадроциклов, кроссбайков, минибайков, электровелосипедов, электросамокатов, минитракторов и мотоблоков по приемлемым ценам в Минске</h1>
 		</div>
 	</div>
 	<div class="basic-content mb-5">
 		<div class="container">
-			<h2>Халва решает! Игра началась!</h2>
-			<img src="images/ekipa600-400.jpg" alt="Халва решает! Игра началась!" title="Покупайте с Халвой и получайте подарки!">
+			<div class="no-gutters">
+				<h2>Халва решает! Игра началась!</h2>
+				<img src="images/ekipa600-400.jpg" alt="Халва решает! Игра началась!" title="Покупайте с Халвой и получайте подарки!">
 
-			<div>Давно мечтаете о мотоцикле или хотите подарить первокласснику гироскутер? Не хватает средств на новую садовую технику или добротную экипировку? С картой рассрочки Халва эти финансовые неурядицы исчезнут в один миг? Мало того, что обладатели данной карты могут просто и быстро совершать покупки в рассрочку, им дается возможность принять участие в розыгрыше 40 тысяч рублей! Для того чтобы заполучить такой призовой фонд, нужно всего ничего, а именно:</div><div><ol><li>Расплачиваться картой Халва везде, где хочется, но с таким условием, чтобы сумма чека не была меньше 30 руб.</li><li>Зарегистрироваться на www.halva.by/igra.</li><li>Ждать розыгрыша и верить в свой успех!</li></ol></div><div>Результаты игры будут оглашены в самый «школьный» день в году – 1 сентября. Узнать, выиграли вы или нет, можно на официальном сайте (указан выше) или совершив звонок на бесплатный номер 509 99 99.</div><div><br></div><div>Самое главное, что периода проведения акции вполне достаточно&nbsp; для того, чтобы совершить максимум покупок и привлечь внимание организатора – МТБанка. Рекламная игра «Халва решает!»&nbsp; стартовала 6.08.2018 года, а закончится 28.09.2018. В кармане еще нет Халвы? Закажите ее бесплатно, с доставкой на дом и без справки о доходах!</div>
+				<div>Давно мечтаете о мотоцикле или хотите подарить первокласснику гироскутер? Не хватает средств на новую садовую технику или добротную экипировку? С картой рассрочки Халва эти финансовые неурядицы исчезнут в один миг? Мало того, что обладатели данной карты могут просто и быстро совершать покупки в рассрочку, им дается возможность принять участие в розыгрыше 40 тысяч рублей! Для того чтобы заполучить такой призовой фонд, нужно всего ничего, а именно:</div><div><ol><li>Расплачиваться картой Халва везде, где хочется, но с таким условием, чтобы сумма чека не была меньше 30 руб.</li><li>Зарегистрироваться на www.halva.by/igra.</li><li>Ждать розыгрыша и верить в свой успех!</li></ol></div><div>Результаты игры будут оглашены в самый «школьный» день в году – 1 сентября. Узнать, выиграли вы или нет, можно на официальном сайте (указан выше) или совершив звонок на бесплатный номер 509 99 99.</div><div><br></div><div>Самое главное, что периода проведения акции вполне достаточно&nbsp; для того, чтобы совершить максимум покупок и привлечь внимание организатора – МТБанка. Рекламная игра «Халва решает!»&nbsp; стартовала 6.08.2018 года, а закончится 28.09.2018. В кармане еще нет Халвы? Закажите ее бесплатно, с доставкой на дом и без справки о доходах!</div>
 
-			<div style="text-align:right"><a href="#">подробнее</a></div>
+				<div style="text-align:right"><a href="#">подробнее</a></div>
+			</div>
+
 
 		</div>
 	</div>
@@ -642,14 +647,155 @@
 	</footer>
 
 
+	<a href="mailto:info@molotmotors.by" class="mailClicker" title="Написать нам">
+		<img class="mailAs-img" src="images/mail-as600-400.jpg" alt="написать нам">
+	</a>
+
+	<div class="bcClicker" title="Заказать обратный звонок">
+		<img class="backCall-img" src="images/call-as600-400.jpg" alt="заказать обратный звонок">
+	</div>
+	<div class="backCall" id="backCall">
+		<form style="display: block;">
+			<div class="form">
+				<div class="form-title">Позвоните нам по телефону <br><b>+375 (29) 6147000</b><br> или закажите обратный звонок</div>
+				<label for="contactName">Ваше имя:</label>
+				<input id="contactName" type="text" name="name">
+				<label for="contactPhone">Ваш телефон:</label>
+				<input id="contactPhone" name="phone" type="text">
+				<span id="sendcall" class="btn">Заказать звонок</span>
+				<div class="btn-close"><i class="far fa-times-circle"></i></div>
+			</div>
+			<div class="bcRow" id="waitcall" style="text-align:center;display:none;">
+				<b>Ваш запрос принят ожидайте звонка</b>
+			</div>                  
+		</form>
+		<div class="bcClicker"></div>
+</div>
+
+<button class="button-call-us" onclick="window.location.href='tel:+375296147000'">
+		<span class="button-call-us-text">Позвоните нам</span>
+	</button>
 
 
-	<!-- Optional JavaScript -->
+
+<!-- Start shaiders -->
+<script src="js/three.js"></script>
+<script id="vertexShader" type="x-shader/x-vertex">
+    varying vec2 vUv;
+    void main() {
+        // vUv = vec2(1.0 - position.x,1.0 - position.y);
+        vUv = (position.xy+1.0)*0.5;
+        // vUv.x=1.0-vUv.x;
+        // vUv.y=1.0-vUv.y;
+        // gl_Position = vec4( position, 1.0 );
+         gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+</script>
+
+<script id="fragmentShader" type="x-shader/x-fragment">
+    varying vec2 vUv;
+    uniform vec2 u_resolution;
+    uniform vec2 u_mouse;
+    uniform float u_time;
+    uniform sampler2D texture;
+    uniform sampler2D map;
+    void main() {
+
+        vec2 xy = vUv.xy / u_resolution.xy;
+        float map=texture2D(map,vUv).r;
+        float m =  (u_mouse.x/u_resolution.x - 0.5) * 0.01;
+        
+        float frequency=100.0;
+        float amplitude=0.006;
+        float distortion=1.5* sin(vUv.y*frequency + u_time)*amplitude +m;
+        // float distortion=m;
+        vec4 color=texture2D(texture,vec2(vUv.x + distortion * map, vUv.y));
+        gl_FragColor = vec4((1.0-map)*color.rgb + map*vec3(color.r,color.g,color.b),1.0);
+
+    }
+</script>
+
+<script>
+  var container;
+  var camera, scene, renderer;
+  var uniforms;
+  var mouse = {x:0, y:0};
+  var loader = new THREE.TextureLoader();
+  document.onmousemove = getMouseXY;
+  init();
+  animate();
+  function getMouseXY(e) {
+      mouse.x = e.pageX;
+      mouse.y = e.pageY;
+      uniforms.u_mouse.value.x = mouse.x;
+      uniforms.u_mouse.value.y = mouse.y;
+  }
+  function init() {
+      container = document.getElementById( 'canvas' );
+      
+      camera = new THREE.Camera();
+      camera.position.z = 1;
+      scene = new THREE.Scene();
+      var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
+      uniforms = {
+          u_time: { type: "f", value: 1.0 },
+          u_mouse: { type: "v2", value: new THREE.Vector2() },
+          u_resolution: { type: "v2", value: new THREE.Vector2() },
+          texture: {value: loader.load( "images/fon-orange.jpg" ) },
+          map: {value: loader.load( "images/white.jpg" ) }
+      };
+      var material = new THREE.ShaderMaterial( {
+          uniforms: uniforms,
+          vertexShader: document.getElementById( 'vertexShader' ).textContent,
+          fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+      } );
+      var mesh = new THREE.Mesh( geometry, material );
+      scene.add( mesh );
+      renderer = new THREE.WebGLRenderer();
+      renderer.setPixelRatio( window.devicePixelRatio );
+      
+      container.appendChild( renderer.domElement );
+      onWindowResize();
+      window.addEventListener( 'resize', onWindowResize, false );
+  }
+  function onWindowResize( event ) {
+      renderer.setSize( window.innerWidth, window.innerHeight );
+      uniforms.u_resolution.value.x = 1280;
+      uniforms.u_resolution.value.y = 1024;
+      uniforms.u_mouse.value.x = mouse.x;
+      uniforms.u_mouse.value.y = mouse.y;
+
+
+
+      renderer.setSize( 1280,1024 );
+      uniforms.u_resolution.value.x = 1280;
+      uniforms.u_resolution.value.y = 1024;
+      uniforms.u_mouse.value.x = mouse.x;
+      uniforms.u_mouse.value.y = mouse.y;
+  }
+  function animate() {
+      requestAnimationFrame( animate );
+      render();
+  }
+  function render() {
+      uniforms.u_time.value += 0.05;
+      renderer.render( scene, camera );
+  }
+</script>    
+
+
+
+
+<!-- End shaiders -->
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
 	<script src="js/common.js"></script>
+	</div>
 </body>
 </html>

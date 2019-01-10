@@ -1,7 +1,19 @@
 body {
 	transition: transform .1s linear;
+	position: relative;
+
 }
 
+
+
+canvas {
+  height: 100%!important;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%!important;
+  opacity: 0.8;
+}
 menu {
 	padding: 0;
 	margin: 0;
@@ -10,12 +22,13 @@ menu {
   z-index: 10;
 }
 
-svg {
-	width: 140px;
-	max-width: 140px;
-	height: auto;
 
+.svg__logo {
+	width: 140px;
+	height: auto;
 }
+
+
 
 .bt-orange {
 	border-top: 5px solid orange;
@@ -33,7 +46,7 @@ a.hover_bottom_color::after {
 	content: '';
 	bottom: 10px;
 	left: 10%;
-	height: 2px;
+	height: 1px;
 	width: 0px;
 	background: orange;
 	transition: all .5s ease;
@@ -47,7 +60,7 @@ a.is_active::after{
 	content: '';
 	bottom: 10px;
 	left: 10%;
-	height: 2px;
+	height: 1px;
 	width: 80%;
 	background: orange;
 }
@@ -100,6 +113,9 @@ a.is_active::after{
     left: 5%;
     font-size: 24px;
 }
+
+
+
 
 .top-line__phone {
 	font-size: 26px;
@@ -320,6 +336,7 @@ a.is_active::after{
 
 .basic-content {
 	padding-top: 30px;
+
 }
 .basic-content img {
 	float: right;
@@ -430,11 +447,13 @@ a.is_active::after{
 .footer-requisites {
 	font-size: 10px;
 	text-align: center;
+		color: #fff;
 }
 
 .info-oferts {
 	font-size: 8px;
 	text-align: center;
+	color: #fff;
 }
 
 
@@ -446,3 +465,175 @@ footer {
 	background: #333;
 }
 
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    background-color: #fdca7d;
+}
+
+.backCall {
+    position: fixed;
+    top: 55%;
+    left: 80px;
+    margin-top: -50px;
+    z-index: 2000;
+}
+
+.backCall form {
+    background: #3f8df9;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+.backCall .form {
+    display: flex;
+    flex-direction: column;
+}
+
+.backCall .form-title {
+    font-family: 'gothic', sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.backCall .form input {
+    border-radius: 5px;
+    border: none;
+    line-height: 25px;
+}
+
+.backCall .btn-close {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.backCall .btn {
+    background: #4CAF50;
+    padding: 5px 0;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 1px 1px 2px black;
+    transition: all .5s ease;
+    margin: 10px 0 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.top-email {
+	font-size: 16px;
+	color: #ffa500;
+	text-decoration: underline;
+}
+
+.top-email:hover {
+	color: #ffa500;
+	text-decoration: none;
+}
+
+.bcClicker {
+  cursor: pointer;
+  width: 80px;
+  opacity: .75;
+  transition: opacity ease 0.5s;
+  position: fixed;
+  top: 50%;
+  left: -20px;
+  z-index: 2000;
+      border: 1px solid #fff;
+        transition: all .5s ease;
+}
+
+.mailClicker {
+  cursor: pointer;
+  width: 80px;
+  opacity:.75;
+  transition: opacity ease 0.5s;
+  position: fixed;
+  top: 40%;
+  left: -20px;
+  z-index: 2000;
+  border: 1px solid #fff;
+  transition: all .5s ease;
+
+}
+
+.mailClicker:hover, .bcClicker:hover {
+	left: 0;
+	opacity: 1;
+}
+.backCall-img, .mailAs-img {
+	max-width: 100%;
+}
+
+.button-call-us {
+	display: none;
+}
+
+.backCall {
+	display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+	.fotogalery-head {
+	    top: 20px;
+	    left: 18%;
+	    font-size: 30px;
+	}
+	.p0 {
+			padding: 0;
+	}
+	.tac {
+		text-align: center;
+	}
+
+	.form-inline {
+    justify-content: center;
+  }
+
+  .nav-item {
+  	font-size: 18px;
+  }
+
+  .dropdown-item {
+  	font-size: 18px;	
+  }
+
+  .mailClicker, .bcClicker{
+	display: none;
+	}
+
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+	.button-call-us {
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    padding: 13px 0;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background: orange;
+	}
+}
